@@ -270,19 +270,19 @@ const animal2 = new Animals('random animal 2',15,'randAnimalName 2',25,2,30,60);
 const mammal1 = new Mammals('fox', 5, 'FoxName', 12, 4, 25, 10);
 const mammal2 = new Mammals('wolf', 7, 'WolfName', 17, 4, 10, 110);
 
-const bird1 = new Birds('pigeon', 2, 'pigeonName' );
-const bird2 = new Birds();
+const bird1 = new Birds('pigeon', 2, 'PigeonName', 0.5, 2, 15, 1);
+const bird2 = new Birds('parrot', 1, 'ParrotName', 0.4, 2, 10, 0.8);
 
-const fish1 = new Fish();
-const fish2 = new Fish();
+const fish1 = new Fish('carp', 3,'CarpName', 2.2, 'none', 5, 7);
+const fish2 = new Fish('herring', 4,'HerringName', 0.8, 'none', 8, 2);
 
-const predator1 = new Predators();
-const predator2 = new Predators();
+const predator1 = new Predators('lion', 10, 'LionName', 50, 4, 20, 150);
+const predator2 = new Predators('tiger', 5, 'TigenName', 40, 4, 25, 180);
 
-const whale1 = new Whales();
-const whale2 = new Whales();
+const whale1 = new Whales('beluga', 8, 'BelugaName', 70, 'none', 10, 100);
+const whale2 = new Whales('blue whale', 4, 'BlueWhaleName', 250, 'none', 25, 300);
 
-const primate1 = new Primates();
+// const primate1 = new Primates('chimpanzee', 6, 'ChimpanzeeName');
 const primate2 = new Primates();
 
 const dog1 = new Dog();
