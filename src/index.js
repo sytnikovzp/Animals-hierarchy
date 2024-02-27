@@ -252,11 +252,11 @@ const dolphin2 = new Dolphin(25, 'Spotted dolphin', 75, 'none', 65, 155);
 const human1 = new Human(30, 'Alex', 85, 4, 110, 150);
 const human2 = new Human(31, 'Nadia', 54, 4, 110, 120);
 
-// ----------------------------- Testings -----------------------------------
+// ------------------------ Testings: displaying properties and methods ------------------------------
 
 console.log(animal1);
 console.log('--------------------------');
-console.log(`Name is ${animal1.name}`);
+console.log(`The ${animal1.constructor.name} class representative has the name ${animal1.name}`);
 console.log(`${animal1.name} age is ${animal1.age}`);
 console.log(`${animal1.name} weight is ${animal1.weight}`);
 console.log(`${animal1.name} numbers of limbs is ${animal1.limbAmount}`);
@@ -269,7 +269,7 @@ console.log('--------------------------');
 
 console.log(bird1);
 console.log('--------------------------');
-console.log(`Name is ${bird1.name}`);
+console.log(`The ${bird1.constructor.name} class representative has the name ${bird1.name}`);
 console.log(`${bird1.name} age is ${bird1.age}`);
 console.log(`${bird1.name} weight is ${bird1.weight}`);
 console.log(`${bird1.name} numbers of limbs is ${bird1.limbAmount}`);
@@ -282,7 +282,7 @@ console.log('--------------------------');
 
 console.log(fish2);
 console.log('--------------------------');
-console.log(`Name is ${fish2.name}`);
+console.log(`The ${fish2.constructor.name} class representative has the name ${fish2.name}`);
 console.log(`${fish2.name} age is ${fish2.age}`);
 console.log(`${fish2.name} weight is ${fish2.weight}`);
 console.log(`${fish2.name} numbers of limbs is ${fish2.limbAmount}`);
@@ -295,7 +295,7 @@ console.log('--------------------------');
 
 console.log(dog1);
 console.log('--------------------------');
-console.log(`Name is ${dog1.name}`);
+console.log(`The ${dog1.constructor.name} class representative has the name ${dog1.name}`);
 console.log(`${dog1.name} age is ${dog1.age}`);
 console.log(`${dog1.name} weight is ${dog1.weight}`);
 console.log(`${dog1.name} numbers of limbs is ${dog1.limbAmount}`);
@@ -332,14 +332,14 @@ human1.move();
 human1.say();
 console.log('--------------------------');
 
-console.log(`${human1.name} is ${human1.constructor.name} class ${Animals.isAnimal(human1)}`);
-console.log(Mammals.isMammal(human1));
-console.log(Birds.isBird(human1));
-console.log(Fish.isFish(human1));
-console.log(Predators.isPredator(human1));
-console.log(Whales.isWhale(human1));
-console.log(Dog.isDog(human1));
-console.log(Dolphin.isDolphin(human1));
-console.log(Human.isHuman(human1));
+// ------------------- Testings: displaying class membership inference -------------------------
 
-
+console.log(`${human1.name} is Animals class - ${Animals.isAnimal(human1)}`);
+console.log(`${human1.name} is Mammals class - ${Mammals.isMammal(human1)}`);
+console.log(`${human1.name} is Birds class - ${Birds.isBird(human1)}`);
+console.log(`${human1.name} is Fish class - ${Fish.isFish(human1)}`);
+console.log(`${human1.name} is Predators class - ${Predators.isPredator(human1)}`);
+console.log(`${human1.name} is Whales class - ${Whales.isWhale(human1)}`);
+console.log(`${human1.name} is Dog class - ${Dog.isDog(human1)}`);
+console.log(`${human1.name} is Dolphin class - ${Dolphin.isDolphin(human1)}`);
+console.log(`${human1.name} is Human class - ${Human.isHuman(human1)}`);
